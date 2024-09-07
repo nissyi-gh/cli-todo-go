@@ -20,6 +20,7 @@ func main() {
 		listTasks()
 	default:
 		fmt.Println("Undefined command.")
+		os.Exit(1)
 	}
 }
 
