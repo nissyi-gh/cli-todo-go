@@ -16,6 +16,8 @@ func main() {
 	switch command {
 	case "add":
 		addTask()
+	case "list":
+		listTasks()
 	default:
 		fmt.Println("Undefined command.")
 	}
@@ -27,4 +29,8 @@ func addTask() {
 		os.Exit(1)
 	}
 	fmt.Println("Add task:", os.Args[2:])
+}
+
+func listTasks() {
+	fmt.Println("All tasks:")
 }
